@@ -14,11 +14,19 @@ public abstract class Duck {
     }
 
     /**
-     * To make all ducks fly, the fly method is added
-     * so that all ducks inheriting this class can
-     * have a fly behavior.
+     * By putting fly() in the superclass, Joe gave flying
+     * ability to all ducks, including those that shouldn't.
      * */
     public void fly() {
+        /*
+        * We failed to notice that not all subclasses of Duck
+        * should fly. When we added new behavior to the Duck
+        * superclass. We now have inanimate objects in the
+        * SimUDuck program.
+        *
+        * A localized update to the code caused a nonlocal
+        * side effect (flying rubber ducks)!
+        * */
         System.out.println("Flying...");
     }
 
