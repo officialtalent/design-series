@@ -1,10 +1,24 @@
 package com.devhouseagency.strategypattern.simuduck.duck;
 
+import com.devhouseagency.strategypattern.simuduck.behavior.FlyBehavior;
+import com.devhouseagency.strategypattern.simuduck.behavior.QuackBehavior;
+
 /**
  * All ducks quack and swim. The superclass takes care
  * of the implementation code.
  * */
 public abstract class Duck {
+    public FlyBehavior flyBehavior;
+    public QuackBehavior quackBehavior;
+
+    public void performFly() {
+        flyBehavior.fly();
+    }
+
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
     public void swim() {
         System.out.println("Swimming...");
     }

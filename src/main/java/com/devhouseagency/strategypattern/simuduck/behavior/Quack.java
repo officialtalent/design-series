@@ -2,5 +2,7 @@ package com.devhouseagency.strategypattern.simuduck.behavior;
 
 public class Quack implements QuackBehavior {
     @Override
-    public void quack() {}
+    public void quack() {
+        System.out.println("Quack");
+    }
 }
