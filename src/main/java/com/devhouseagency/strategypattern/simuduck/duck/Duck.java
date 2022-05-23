@@ -5,10 +5,6 @@ package com.devhouseagency.strategypattern.simuduck.duck;
  * of the implementation code.
  * */
 public abstract class Duck {
-    public void quack() {
-        System.out.println("Quack...");
-    }
-
     public void swim() {
         System.out.println("Swimming...");
     }
