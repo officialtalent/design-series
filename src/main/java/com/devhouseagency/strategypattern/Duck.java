@@ -14,6 +14,15 @@ public abstract class Duck {
     }
 
     /**
+     * To make all ducks fly, the fly method is added
+     * so that all ducks inheriting this class can
+     * have a fly behavior.
+     * */
+    public void fly() {
+        System.out.println("Flying...");
+    }
+
+    /**
      * The display() method is abstract, since all duck
      * subtypes look different.
      * Each duck subtype is responsible for implementing
