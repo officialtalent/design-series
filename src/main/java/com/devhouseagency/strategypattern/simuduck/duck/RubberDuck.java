@@ -1,4 +1,6 @@
-package com.devhouseagency.strategypattern;
+package com.devhouseagency.strategypattern.simuduck.duck;
+
+import com.devhouseagency.strategypattern.simuduck.duck.Duck;
 
 public class RubberDuck extends Duck {
     /*
